@@ -43,6 +43,7 @@
     {"id":{"name":"obj_knight","path":"objects/obj_knight/obj_knight.yy",},},
     {"id":{"name":"obj_vampire","path":"objects/obj_vampire/obj_vampire.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"spr_castleTiles","path":"sprites/spr_castleTiles/spr_castleTiles.yy",},},
     {"id":{"name":"spr_knightTest","path":"sprites/spr_knightTest/spr_knightTest.yy",},},
@@ -52,6 +53,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
