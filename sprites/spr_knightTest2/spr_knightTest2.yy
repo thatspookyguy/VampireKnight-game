@@ -2,8 +2,8 @@
   "$GMSprite":"",
   "%Name":"spr_knightTest2",
   "bboxMode":0,
-  "bbox_bottom":20,
-  "bbox_left":18,
+  "bbox_bottom":31,
+  "bbox_left":17,
   "bbox_right":27,
   "bbox_top":3,
   "collisionKind":1,
@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"07d1ad45-6e95-4c03-a8d8-a7c935441151","blendMode":0,"displayName":"default","isLocked":false,"name":"07d1ad45-6e95-4c03-a8d8-a7c935441151","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f8f9f3fa-c175-423e-93fa-a66ca685fbd6","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"f8f9f3fa-c175-423e-93fa-a66ca685fbd6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_knightTest2",
   "nineSlice":null,
