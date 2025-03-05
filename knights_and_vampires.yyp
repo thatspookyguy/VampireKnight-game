@@ -50,6 +50,7 @@
     {"id":{"name":"spr_heavyBreathing","path":"sprites/spr_heavyBreathing/spr_heavyBreathing.yy",},},
     {"id":{"name":"spr_knightDefunct","path":"sprites/spr_knightDefunct/spr_knightDefunct.yy",},},
     {"id":{"name":"spr_knightTest2_1","path":"sprites/spr_knightTest2_1/spr_knightTest2_1.yy",},},
+    {"id":{"name":"spr_knightTest2_2","path":"sprites/spr_knightTest2_2/spr_knightTest2_2.yy",},},
     {"id":{"name":"spr_knightTest2","path":"sprites/spr_knightTest2/spr_knightTest2.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
     {"id":{"name":"ts_castle","path":"tilesets/ts_castle/ts_castle.yy",},},
