@@ -40,6 +40,7 @@
   },
   "name":"knights_and_vampires",
   "resources":[
+    {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_hyeart","path":"objects/obj_hyeart/obj_hyeart.yy",},},
     {"id":{"name":"obj_knight","path":"objects/obj_knight/obj_knight.yy",},},
     {"id":{"name":"obj_vampire","path":"objects/obj_vampire/obj_vampire.yy",},},
@@ -48,6 +49,7 @@
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"spr_castleTiles","path":"sprites/spr_castleTiles/spr_castleTiles.yy",},},
     {"id":{"name":"spr_heavyBreathing","path":"sprites/spr_heavyBreathing/spr_heavyBreathing.yy",},},
+    {"id":{"name":"spr_knightDance","path":"sprites/spr_knightDance/spr_knightDance.yy",},},
     {"id":{"name":"spr_knightDefunct","path":"sprites/spr_knightDefunct/spr_knightDefunct.yy",},},
     {"id":{"name":"spr_knightTest2_1","path":"sprites/spr_knightTest2_1/spr_knightTest2_1.yy",},},
     {"id":{"name":"spr_knightTest2_2","path":"sprites/spr_knightTest2_2/spr_knightTest2_2.yy",},},
