@@ -1,4 +1,10 @@
 //the alarm for displaying the bored idle animation
-if (sprite_index == spr_knightTest2_2 && global.moving == false) {
-	sprite_index = spr_knightDance;
+if (global.moving == false) {
+	if (sprite_index == spr_knightRight) {
+		sprite_index = spr_knightDanceRight;
+	}
+	else if (sprite_index == spr_knightLeft) {
+		sprite_index = spr_knightDanceLeftt;
+	}
 }
+

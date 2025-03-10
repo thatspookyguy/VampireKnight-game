@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_knightTest2_2",
-    "path":"sprites/spr_knightTest2_2/spr_knightTest2_2.yy",
+    "name":"spr_knightRight",
+    "path":"sprites/spr_knightRight/spr_knightRight.yy",
   },
   "spriteMaskId":null,
   "visible":true,
