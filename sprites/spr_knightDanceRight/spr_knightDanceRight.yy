@@ -45,8 +45,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"knight",
-    "path":"folders/Sprites/knight.yy",
+    "name":"ignore",
+    "path":"folders/Sprites/knight/ignore.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
