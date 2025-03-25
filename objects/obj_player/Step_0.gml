@@ -6,7 +6,6 @@
 
 /// Gravity
 ySpeed += grav
-moving = false;
 
 ///checks to prevent clipping into blocks
 slopeTouch = false;
@@ -30,11 +29,19 @@ if (moving == true) {
 		sprite_index = spr_knightWalk;
 	}
 	else if (slopeTouch == true) {
-		sprite_index = spr_knight
+		//sprite_index = spr_knightSlideDownS;
+	}
+	else if (!place_meeting(x, y + 1, obj_wall)) {
+		sprite_index = spr_knightJump;
 	}
 }
 else {
-	sprite_index = spr_knightSide;
+	if (!place_meeting(x, y + 1, obj_wall)) {
+		sprite_index = spr_knightJump;
+	}
+	else {
+		sprite_index = spr_knightSide;
+	}
 }
 		
 		

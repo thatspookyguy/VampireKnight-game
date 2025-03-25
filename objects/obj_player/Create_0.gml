@@ -14,3 +14,5 @@ slopeTouch = false;
 ceilingTouch = false;
 jump = false;
 moving = false;
+
+resize();
