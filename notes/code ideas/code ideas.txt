@@ -1,0 +1,2 @@
+For the problem of timing the jump slashes with the swooshing of the cape in the normal jump animation:
+

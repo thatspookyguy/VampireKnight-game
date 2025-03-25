@@ -1,0 +1,41 @@
+THIS IS THE TO DO LIST :3
+
+movement
+ - // idle side
+ - // slash side
+ - // slash up
+ - // jump
+ - // j.slash side
+ - // j.slash up
+ - // j.slash down
+ - // incline slide
+ - // decline slide
+ - // normal slide 
+ - // walk 
+
+
+sword
+ - // sword
+ - slash
+ - charge slash orbs
+
+cutscenes
+ - intro
+ - outro
+ - middle
+ 
+ world
+  - castle tileset 
+  - obstacles tileset
+		- // spikes
+		- waxed floors
+		- lamps
+  - enemies
+		- bats 
+		- skull
+		-// ghoul :3
+
+misc
+ - death(?) / waking up after death
+ - // foobar side
+

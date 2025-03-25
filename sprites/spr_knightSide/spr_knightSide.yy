@@ -35,7 +35,7 @@
   ],
   "name":"spr_knightSide",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"knight",
     "path":"folders/Sprites/knight.yy",
@@ -108,7 +108,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":13,
     "yorigin":0,
   },
   "swatchColours":null,
