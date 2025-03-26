@@ -117,59 +117,57 @@ if place_meeting(x, y + ySpeed, obj_wall){ /// collision
 	
 }
 
-/// force eject from walls if all else fails by moving character to the nearest empty space
-
-//if place_meeting(x, y, obj_wall){
-//	for(var i = 0; i < 1000; i++){ //// goes up to 1000 to ensure that there will be a space detected
-//		///Left
-//		if !place_meeting(x - i,y,obj_wall){
-//			x -= i
-//			break;
-//		}
-//		///Right
-//		if !place_meeting(x + i,y,obj_wall){
-//			x += i
-//			break;
-//		}
-//		///Up
-//		if !place_meeting(x,y - i,obj_wall){
-//			y -= i
-//			break;
-//		}
-//		///Down
-//		if !place_meeting(x,y + i,obj_wall){
-//			y += i
-//			break;
-//		}
-//		///Top Left
-//		if !place_meeting(x - i,y - i,obj_wall){
-//			x -= i
-//			y -= i
-//			break;
-//		}
-//		///Top Right
-//		if !place_meeting(x + i,y - i,obj_wall){
-//			x += i
-//			y -= i
-//			break;
-//		}
-//		///Bottom Left
-//		if !place_meeting(x - i,y + i,obj_wall){
-//			x -= i
-//			y += i
-//			break;
-//		}
-//		///Bottom Right
-//		if !place_meeting(x + i,y + i,obj_wall){
-//			x += i
-//			y += i
-//			break;
-//		}
-//	}
-//}
 
 xSpeed *= decay /// Speed decay
 
 x += xSpeed
 y += ySpeed
 
+if place_meeting(x, y, obj_wall){
+	for(var i = 0; i < 1000; i++){ //// goes up to 1000 to ensure that there will be a space detected
+		///Left
+		if !place_meeting(x - i,y,obj_wall){
+			x -= i
+			break;
+		}
+		///Right
+		if !place_meeting(x + i,y,obj_wall){
+			x += i
+			break;
+		}
+		///Up
+		if !place_meeting(x,y - i,obj_wall){
+			y -= i
+			break;
+		}
+		///Down
+		if !place_meeting(x,y + i,obj_wall){
+			y += i
+			break;
+		}
+		///Top Left
+		if !place_meeting(x - i,y - i,obj_wall){
+			x -= i
+			y -= i
+			break;
+		}
+		///Top Right
+		if !place_meeting(x + i,y - i,obj_wall){
+			x += i
+			y -= i
+			break;
+		}
+		///Bottom Left
+		if !place_meeting(x - i,y + i,obj_wall){
+			x -= i
+			y += i
+			break;
+		}
+		///Bottom Right
+		if !place_meeting(x + i,y + i,obj_wall){
+			x += i
+			y += i
+			break;
+		}
+	}
+}

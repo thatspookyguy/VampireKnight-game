@@ -116,7 +116,7 @@
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"toast","path":"sprites/toast/toast.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
-    {"id":{"name":"ts_castle","path":"tilesets/ts_castle/ts_castle.yy",},},
+    {"id":{"name":"ts_castlebg","path":"tilesets/ts_castlebg/ts_castlebg.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
