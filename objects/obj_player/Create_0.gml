@@ -15,4 +15,4 @@ ceilingTouch = false;
 jump = false;
 moving = false;
 
-resize();
+//resize();

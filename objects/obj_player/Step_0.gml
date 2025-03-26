@@ -2,7 +2,7 @@
 
 ///// there's something wrong here
 
-
+///USE IMAGE_ANGLE FOR ROTATING SLASH SPRITE
 
 /// Gravity
 ySpeed += grav
