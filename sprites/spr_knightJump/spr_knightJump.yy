@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_knightJump",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":35,
-  "bbox_left":5,
-  "bbox_right":25,
+  "bbox_left":3,
+  "bbox_right":23,
   "bbox_top":6,
   "collisionKind":1,
   "collisionTolerance":0,

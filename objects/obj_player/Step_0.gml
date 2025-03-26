@@ -12,11 +12,11 @@ slopeTouch = false;
 ceilingTouch = false;
 
 /// SPRITES !!!111!11!
-if(keyboard_check(vk_left)) {
+if (keyboard_check(vk_left) && !keyboard_check(vk_right)) {
 	image_xscale = -2;
 	moving = true;
 }
-else if (keyboard_check(vk_right)) {
+else if (keyboard_check(vk_right) && !keyboard_check(vk_left)) {
 	image_xscale = 2;
 	moving = true;
 }
