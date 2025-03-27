@@ -9,4 +9,7 @@ else {
 	alarm_set(1, 20); /// slash cooldown timer
 }
 
+
+/// while(alarm_get(1) > -1) { set acceleration to 0.1 } 
+
 //obj_slash.visible = true;
