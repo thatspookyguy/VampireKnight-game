@@ -11,7 +11,6 @@ ySpeed += grav
 
 ///checks to prevent clipping into blocks
 slopeTouch = false;
-ceilingTouch = false;
 
 /// SPRITES !!!111!11!
 if (keyboard_check(vk_left) && !keyboard_check(vk_right)) {
@@ -104,19 +103,34 @@ if (instance_place(x, y + 1, obj_movingPlatform) != noone && abs(xSpeed) < 3){ /
 }
 
 if place_meeting(x, y + ySpeed, obj_wall){ /// collision
-	if (ySpeed < 0){
+	ySpeed = 0;
+	if (ySpeed < 0) {
 		ceilingTouch = true;
 		y+= 4
 	}
-	ySpeed = 0
-	if keyboard_check(vk_space) && ! ceilingTouch
-        {
-                ySpeed += jumpHeight        
-        } 
+	else {
+		ceilingTouch = false;
+	}
 	if ((keyboard_check(vk_right) - keyboard_check(vk_left)) == 0){
 		xSpeed *= drag 
 	}
-	
+}
+
+
+
+if place_meeting(x, y + ySpeed, obj_wall) {
+	//if keyboard_check_pressed(vk_space) {
+		jump = true;
+	//}
+	jumpLimit = 10;
+}
+if (jump && keyboard_check(vk_space)) {
+	ySpeed += jumpHeight;
+	jumpLimit -= 1;
+	if jumpLimit < 0  {
+		jump = false;
+		jumpLimit = 10;
+	}
 }
 
 

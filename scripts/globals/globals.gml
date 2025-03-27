@@ -1,4 +1,4 @@
-window_set_fullscreen(true);
+window_set_fullscreen(false);
 //grav = 0.5
 //xSpeed = 0;
 //ySpeed = 0;
