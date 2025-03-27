@@ -4,6 +4,8 @@
 
 ///USE IMAGE_ANGLE FOR ROTATING SLASH SPRITE
 
+/// work on FIXING JUMPS !!!1
+
 /// Gravity
 ySpeed += grav
 

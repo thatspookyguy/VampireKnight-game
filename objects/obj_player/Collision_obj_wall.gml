@@ -1,34 +1,50 @@
-///// ok so I literally copy paasted my collision code into a collision function and it works now
+/// ok so I literally copy pasted my collision code into a collision function and it works now
 
-//if place_meeting(x + abs(xSpeed), y, obj_wall) && !slopeTouch { /// collision
-//	xSpeed = 0
-//}
+//// X collision and slopes
+var scootVal = 0.5
+if place_meeting(x + xSpeed, y, obj_wall)
+{
+    ///// checks for slopes going up
+    if !place_meeting(x + xSpeed, y - abs(xSpeed)-1, obj_wall) {
+        while place_meeting(x + xSpeed, y, obj_wall ) { y -= scootVal};
+    }
+    
+    else { 
+        /// smooth collision
+        while !place_meeting(x + (scootVal * sign(xSpeed)) , y, obj_wall){
+            x += (scootVal * sign(xSpeed))
+        }
+        /// actual collision
+        xSpeed = 0;
+    }
+}
 
-//var inst = instance_place(x, y + 1, obj_movingPlatform);
-//var platSpeedBoost = noone
+/// going down slopes
 
-//if (inst != noone){
-//	if (abs(xSpeed) < 3)
-//	{
-//		x += inst.xSpeed
-//	} 
-//}
+if ySpeed >= 0 && !place_meeting(x + xSpeed, y + 3, obj_wall) && place_meeting(x + xSpeed, y + abs(xSpeed)+1, obj_wall) {
+    while !place_meeting(x + xSpeed, y + 1, obj_wall ) 
+    {
+        y += scootVal * 10; 
+        ySpeed += 5 * abs(xSpeed)
+    }
+}
 
-//if place_meeting(x, y + ySpeed, obj_wall){ /// collision
-//	if (ySpeed < 0){
-//		ceilingTouch = true;
-//		y+= 4
-//	}
-//	ySpeed = 0
-//	if keyboard_check(vk_space) && ! ceilingTouch
-//        {
-//                ySpeed += jumpHeight        
-//        } 
-//	if ((keyboard_check(vk_right) - keyboard_check(vk_left)) == 0){
-//		xSpeed *= drag 
-//	}
-	
-//}
+if place_meeting(x, y + ySpeed, obj_wall){ /// collision
+    if (ySpeed < 0){
+        ceilingTouch = true;
+        y+= 4
+    }
+    ySpeed = 0
+    if keyboard_check(vk_space) && ! ceilingTouch
+        {
+                ySpeed += jumpHeight        
+        } 
+    if ((keyboard_check(vk_right) - keyboard_check(vk_left)) == 0){
+        xSpeed *= drag 
+    }
+    
+}
+
 
 if place_meeting(x, y, obj_wall){
 	for(var i = 0; i < 1000; i++){ //// goes up to 1000 to ensure that there will be a space detected
