@@ -38,3 +38,7 @@ else{
 	}
 		
 }
+
+//while(alarm_get(1) > -1) { 
+//	obj_player.acc = 0.2 
+//}

@@ -15,4 +15,6 @@ ceilingTouch = false;
 jump = false;
 moving = false;
 
+image_xscale = 2;
+image_yscale = 2;
 //resize();
