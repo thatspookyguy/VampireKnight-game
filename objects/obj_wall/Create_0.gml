@@ -1,5 +1,5 @@
 xSpeed = 0;
 ySpeed = 0;
 
-knockback = 5;
+knockback = 10;
 
