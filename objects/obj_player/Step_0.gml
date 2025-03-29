@@ -7,9 +7,9 @@
 /// work on FIXING JUMPS !!!1
 
 /// Gravity
-ySpeed += grav
 
 ///checks to prevent clipping into blocks
+//ySpeed = 0;
 slopeTouch = false;
 
 /// SPRITES !!!111!11!
@@ -19,7 +19,7 @@ if (keyboard_check(vk_left) && !keyboard_check(vk_right)) {
 }
 else if (keyboard_check(vk_right) && !keyboard_check(vk_left)) {
 	image_xscale = 2;
-	moving = true;
+	moving = true; 
 }
 else {
 	moving = false;
@@ -74,7 +74,7 @@ if !place_meeting(x + xSpeed, y -abs(xSpeed), obj_wall){ ///slopes
 			y -= 4
 			//grav = 0
 		}
-		grav = 0.4
+		grav = 0.6
 		slopeTouch = true
 	}
 	
@@ -100,6 +100,7 @@ if place_meeting(x + abs(xSpeed), y, obj_wall) && !slopeTouch { /// collision
 
 if (instance_place(x, y + 1, obj_movingPlatform) != noone && abs(xSpeed) < 3){ ///moving platforms
 	x += instance_place(x, y + 1, obj_movingPlatform).xSpeed 
+	y += 4
 }
 
 if place_meeting(x, y + ySpeed, obj_wall){ /// collision
@@ -118,23 +119,54 @@ if place_meeting(x, y + ySpeed, obj_wall){ /// collision
 
 
 
-if place_meeting(x, y + ySpeed, obj_wall) {
+if (place_meeting(x, y, obj_wall)) { ///jumping, working theory but isnt really working
 	//if keyboard_check_pressed(vk_space) {
-		jump = true;
+	jump = true;
 	//}
-	jumpLimit = 10;
+	jumpLimit = 0;
+
 }
+
 if (jump && keyboard_check(vk_space)) {
 	ySpeed += jumpHeight;
-	jumpLimit -= 1;
-	if jumpLimit < 0  {
+	jumpLimit += 1;
+	if jumpLimit >= 15  {
 		jump = false;
-		jumpLimit = 10;
+		jumpLimit = 0;
 	}
 }
 
 
+//if (place_meeting(x, y + ySpeed, obj_wall)) { ///jumping  /// does not work
+//	if keyboard_check_pressed(vk_space) {
+//		set_alarm(0, 20)
+//	}
+//	//jumpLimit = 0;
+//	if (keyboard_check(vk_space) && (get_alarm(0) > -1)) {
+//		ySpeed += jumpHeight;
+//	}
+//}
+
+
+//if (place_meeting(x, y + ySpeed, obj_wall)) {  /// sean's idea, works but only on moving plats and also goes all in one, no pressure sensistivity
+//	//if keyboard_check_pressed(vk_space) {
+//	jumpHeight = -15;
+//	jump = true;
+//}
+
+//if (jump && keyboard_check(vk_space)) {
+//	ySpeed += jumpHeight;
+//	jumpHeight += 1;
+//	if jumpHeight < 0 {
+//		jump = false;
+//	//	jumpLimit = 0;
+//	}
+//}
+
+
+
 xSpeed *= decay /// Speed decay
+ySpeed += grav
 
 x += xSpeed
 y += ySpeed
