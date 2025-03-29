@@ -14,6 +14,7 @@ if (collision_line(x,y,obj_player.x,obj_player.y,obj_ghost,false,true) = noone &
 			speed= 11;
 		}
 	}
+
 	alarm_set(0, 120);
 	alarm_set(1, 90);
 }

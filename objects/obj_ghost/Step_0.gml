@@ -8,3 +8,10 @@ if (collision_line(x,y,obj_player.x,obj_player.y,obj_ghost,false,true) = noone &
 	alarmSet = false;
 }
 }
+
+if (obj_player.x > x) {
+	image_xscale = -2;
+}
+else {
+	image_xscale = 2;
+}

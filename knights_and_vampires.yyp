@@ -91,6 +91,7 @@
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},},
     {"id":{"name":"spr_ghostCharge","path":"sprites/spr_ghostCharge/spr_ghostCharge.yy",},},
     {"id":{"name":"spr_ghostChargeS","path":"sprites/spr_ghostChargeS/spr_ghostChargeS.yy",},},
+    {"id":{"name":"spr_ghostHurt","path":"sprites/spr_ghostHurt/spr_ghostHurt.yy",},},
     {"id":{"name":"spr_heavyBreathing","path":"sprites/spr_heavyBreathing/spr_heavyBreathing.yy",},},
     {"id":{"name":"spr_intro1","path":"sprites/spr_intro1/spr_intro1.yy",},},
     {"id":{"name":"spr_knightc","path":"sprites/spr_knightc/spr_knightc.yy",},},
