@@ -117,6 +117,7 @@
     {"id":{"name":"spr_knightSlideUpS","path":"sprites/spr_knightSlideUpS/spr_knightSlideUpS.yy",},},
     {"id":{"name":"spr_knightWalk","path":"sprites/spr_knightWalk/spr_knightWalk.yy",},},
     {"id":{"name":"spr_mainBg","path":"sprites/spr_mainBg/spr_mainBg.yy",},},
+    {"id":{"name":"spr_nothing","path":"sprites/spr_nothing/spr_nothing.yy",},},
     {"id":{"name":"spr_optionsScreen","path":"sprites/spr_optionsScreen/spr_optionsScreen.yy",},},
     {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},
     {"id":{"name":"spr_slash","path":"sprites/spr_slash/spr_slash.yy",},},

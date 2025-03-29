@@ -26,4 +26,3 @@ if(slashing == true) {
 }
 slashing = false;
 obj_slash.visible = false;
- mask_index = -1; 
