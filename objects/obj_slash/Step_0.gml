@@ -1,23 +1,26 @@
+getControls();
+controlsSetup();
 
-if (keyboard_check(vk_left) && !keyboard_check(vk_right)) {
+
+if (leftKey && !rightKey) {
 	x = obj_player.x + 10
 	y = obj_player.y
 	image_xscale = -2;
 	slash_direction = 0
 }
-else if (keyboard_check(vk_right) && !keyboard_check(vk_left)) {
+else if (rightKey && !leftKey) {
 	x = obj_player.x - 10
 	y = obj_player.y
 	image_xscale = 2;
 	slash_direction = 1
 }
-else if (keyboard_check(vk_up) && !keyboard_check(vk_down)) {
+else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
 	x = obj_player.x 
 	y = obj_player.y - 10
 	image_yscale = 2;
 	slash_direction = 2
 }
-else if (keyboard_check(vk_down) && !keyboard_check(vk_up)) {
+else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || (rightDown && !upKey)))  {
 	x = obj_player.x 
 	y = obj_player.y + 10
 	image_yscale = 2;

@@ -75,6 +75,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"rooooom","path":"rooms/rooooom/rooooom.yy",},},
+    {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"knight","path":"sprites/knight/knight.yy",},},
     {"id":{"name":"progress","path":"sprites/progress/progress.yy",},},

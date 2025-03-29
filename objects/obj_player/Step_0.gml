@@ -1,7 +1,5 @@
-/// Force eject from solid platforms
-
-///// there's something wrong here
-
+controlsSetup()
+getControls()
 ///USE IMAGE_ANGLE FOR ROTATING SLASH SPRITE
 
 /// work on FIXING JUMPS !!!1
@@ -51,15 +49,6 @@ if(abs(xSpeed) <= walkSpeedCap){ ///speed caps
 	xSpeed+=acc*(keyboard_check(vk_right) - keyboard_check(vk_left)) /// horizontal movement
 	
 }
-else{
-	if(xSpeed > 0 && keyboard_check(vk_left)){ 
-		xSpeed+=acc* (0 - keyboard_check(vk_left))
-	}
-	if (xSpeed < 0 && keyboard_check(vk_right)){ 
-		xSpeed+=acc*(keyboard_check(vk_right) - 0)
-	}
-}
-
 
 
 if !place_meeting(x + xSpeed, y -abs(xSpeed), obj_wall){ ///slopes
@@ -77,92 +66,57 @@ if !place_meeting(x + xSpeed, y -abs(xSpeed), obj_wall){ ///slopes
 		grav = 0.6
 		slopeTouch = true
 	}
-	
-//if (slopeTouch == true) {
-//	if(keyboard_check(vk_left)) {
-//		sprite_index = spr_knightSlideDownS;
-//		image_xscale = -2;
-//	}
-//	else if (keyboard_check(vk_right)) {
-//		sprite_index = spr_knightSlideUp;
-//		image_xscale = 2;
-//	}
-//}
-// fix to make sure it works both ways
 
 
-if place_meeting(x + abs(xSpeed), y, obj_wall) && !slopeTouch { /// collision
+if place_meeting(x + xSpeed, y, obj_wall) && !slopeTouch { /// collision
 	xSpeed = 0
 }
-
-
-//var platSpeedBoost = noone
 
 if (instance_place(x, y + 1, obj_movingPlatform) != noone && abs(xSpeed) < 3){ ///moving platforms
 	x += instance_place(x, y + 1, obj_movingPlatform).xSpeed 
 	y += 4
 }
 
-if place_meeting(x, y + ySpeed, obj_wall){ /// collision
+	
+/// Y movement
+
+
+if (jumpKeyBuffered && canJump)
+{
+	//// reset buffer
+	jumpKeyBuffered = false;
+	jumpKeyBufferTimer = 0;
+	/// jump
+	jumpHoldTimer = jumpHoldFrames;
+}
+if !jumpKey {
+	jumpHoldTimer = 0;
+}
+
+if jumpHoldTimer > 0 {
+	ySpeed = jumpHeight;
+	jumpHoldTimer --;
+}
+
+if place_meeting(x, y + ySpeed, obj_wall) { /// collision
+	/// set y to zero to collide
 	ySpeed = 0;
-	if (ySpeed < 0) {
-		ceilingTouch = true;
-		y+= 4
-	}
-	else {
-		ceilingTouch = false;
-	}
-	if ((keyboard_check(vk_right) - keyboard_check(vk_left)) == 0){
-		xSpeed *= drag 
+	if ySpeed >= 0 && place_meeting(x, y + 3, obj_slope) {
+		drag = 0.1;
+	} else { drag = 0.7} 
+	if (canJump && (keyboard_check(vk_right) - keyboard_check(vk_left)) == 0) {
+		xSpeed *= drag
 	}
 }
 
+/// set if I'm on ground
 
-
-if (place_meeting(x, y, obj_wall)) { ///jumping, working theory but isnt really working
-	//if keyboard_check_pressed(vk_space) {
-	jump = true;
-	//}
-	jumpLimit = 0;
-
+if (ySpeed >= 0 && place_meeting(x, y+ 3, obj_wall)) || (place_meeting(x, y+ 3, obj_slope)) {
+	canJump = true;
 }
-
-if (jump && keyboard_check(vk_space)) {
-	ySpeed += jumpHeight;
-	jumpLimit += 1;
-	if jumpLimit >= 15  {
-		jump = false;
-		jumpLimit = 0;
-	}
+else {
+	canJump = false;
 }
-
-
-//if (place_meeting(x, y + ySpeed, obj_wall)) { ///jumping  /// does not work
-//	if keyboard_check_pressed(vk_space) {
-//		set_alarm(0, 20)
-//	}
-//	//jumpLimit = 0;
-//	if (keyboard_check(vk_space) && (get_alarm(0) > -1)) {
-//		ySpeed += jumpHeight;
-//	}
-//}
-
-
-//if (place_meeting(x, y + ySpeed, obj_wall)) {  /// sean's idea, works but only on moving plats and also goes all in one, no pressure sensistivity
-//	//if keyboard_check_pressed(vk_space) {
-//	jumpHeight = -15;
-//	jump = true;
-//}
-
-//if (jump && keyboard_check(vk_space)) {
-//	ySpeed += jumpHeight;
-//	jumpHeight += 1;
-//	if jumpHeight < 0 {
-//		jump = false;
-//	//	jumpLimit = 0;
-//	}
-//}
-
 
 
 xSpeed *= decay /// Speed decay

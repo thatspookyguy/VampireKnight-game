@@ -12,4 +12,4 @@ else {
 
 
 
-//obj_slash.visible = true;
+obj_slash.visible = true;
