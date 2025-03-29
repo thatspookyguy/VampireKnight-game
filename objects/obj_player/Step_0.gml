@@ -6,8 +6,6 @@ getControls()
 
 /// Gravity
 
-///checks to prevent clipping into blocks
-//ySpeed = 0;
 slopeTouch = false;
 
 /// SPRITES !!!111!11!
@@ -46,7 +44,7 @@ else {
 		
 
 if(abs(xSpeed) <= walkSpeedCap){ ///speed caps
-	xSpeed+=acc*(keyboard_check(vk_right) - keyboard_check(vk_left)) /// horizontal movement
+	xSpeed+=acc*(rightKey - leftKey) /// horizontal movement
 	
 }
 
@@ -120,10 +118,15 @@ else {
 
 
 xSpeed *= decay /// Speed decay
-ySpeed += grav
+ySpeed += grav /// gravity
 
 x += xSpeed
 y += ySpeed
+
+//// debugging for speed
+
+show_debug_message(xSpeed)
+
 
 if place_meeting(x, y, obj_wall){
 	for(var i = 0; i < 1000; i++){ //// goes up to 1000 to ensure that there will be a space detected

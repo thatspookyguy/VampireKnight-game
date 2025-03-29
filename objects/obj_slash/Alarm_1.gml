@@ -1,1 +1,1 @@
-//// set player acceleration to 0.5 
+obj_player.acc = 0.5;

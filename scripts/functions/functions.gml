@@ -16,12 +16,15 @@ function getControls(){
 	if leftKey && downKey {
 		leftDown = true;
 	} else{ leftDown = false; }
+	
 	if leftKey && upKey {
 		leftUp = true;
 	 }else{ leftUp = false; }
+	 
 	if rightKey && downKey {
 		rightDown = true;
 	}	else{ rightDown = false; }
+	
 	if rightKey && upKey {
 		rightUp = true;
 	} else{ rightUp = false; }

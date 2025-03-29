@@ -1,9 +1,7 @@
 /// ok so I literally copy pasted my collision code into a collision function and it works now
 
 //// X collision and slopes
-jump = true;
-jumpHeight = -2;
-jumpLimit = 0;
+
 
 if place_meeting(x + xSpeed, y, obj_wall)
 {
