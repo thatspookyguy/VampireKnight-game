@@ -1,5 +1,6 @@
 
 speed *= 0.97;
+if alarm_get(2) < 0 {
 if (collision_line(x,y,obj_player.x,obj_player.y,obj_ghost,false,true) = noone && alarm_get(0) == -1 && distance_to_object(obj_player)<= 240) {
     if(alarmSet = false){
 		alarm_set(1, 90);
@@ -15,4 +16,5 @@ if (collision_line(x,y,obj_player.x,obj_player.y,obj_ghost,false,true) = noone &
 	}
 	alarm_set(0, 120);
 	alarm_set(1, 90);
+}
 }

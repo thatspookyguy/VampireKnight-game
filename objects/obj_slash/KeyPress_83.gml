@@ -1,5 +1,6 @@
 //// press s to slash !!!
 
+
 if (alarm_get(1) > -1) {
 	slashing = false;
 }
