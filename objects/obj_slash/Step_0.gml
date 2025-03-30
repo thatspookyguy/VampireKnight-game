@@ -2,6 +2,7 @@ getControls();
 controlsSetup();
 
 
+
 if (leftKey && !rightKey && !leftUp && !leftDown) {
 	x = obj_player.x + 10
 	y = obj_player.y
@@ -20,7 +21,6 @@ else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
 	if obj_player.image_xscale > 0 {
 		image_xscale = 2;
 	} else { image_xscale = -2 }
-	image_yscale = 2;
 	slash_direction = 2
 }
 else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || (rightDown && !upKey)))  {
@@ -29,7 +29,6 @@ else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || 
 	if obj_player.image_xscale > 0 {
 		image_xscale = 2;
 	} else { image_xscale = -2 }
-	image_yscale = 2;
 	slash_direction = 3
 }
 else{

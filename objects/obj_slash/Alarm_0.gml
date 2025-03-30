@@ -5,14 +5,14 @@ if(slashing == true) {
 	if (instance_place(x, y, obj_wall)) {
 		if slash_direction == 0 {
 			obj_player.xSpeed -= instance_place(x, y, obj_wall).knockback
-			obj_player.acc = 0;
-			alarm_set(1,5);
+			//obj_player.acc = 0;
+
 
 		}
 		else if slash_direction = 1 {
 			obj_player.xSpeed += instance_place(x, y, obj_wall).knockback
-			obj_player.acc = 0;
-			alarm_set(1,5);
+			//obj_player.acc = 0;
+
 
 		}
 		else if slash_direction = 2 {

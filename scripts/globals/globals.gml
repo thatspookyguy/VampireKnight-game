@@ -14,3 +14,4 @@ window_set_fullscreen(false);
 //slopeTouch = false;
 
 slashing = false;
+
