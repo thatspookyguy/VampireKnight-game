@@ -24,7 +24,7 @@
   ],
   "name":"spr_sword",
   "nineSlice":null,
-  "origin":0,
+  "origin":2,
   "parent":{
     "name":"sword",
     "path":"folders/Sprites/sword.yy",
@@ -76,7 +76,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":48,
     "yorigin":0,
   },
   "swatchColours":null,

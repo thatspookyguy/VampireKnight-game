@@ -9,7 +9,7 @@ else {
 	sprite_index = spr_slash;
 	image_index = 0;
 	isSlashing = true;
-	alarm_set(0, 2); /// how long until the actual knockback occurs
+	alarm_set(0, 1); /// how long until the actual knockback occurs
 	alarm_set(1, 20); /// slash cooldown timer
 }
 

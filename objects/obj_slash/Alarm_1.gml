@@ -2,3 +2,4 @@
 
 mask_index = spr_nothing; 
 isSlashing = false;
+slashing = true;
