@@ -2,18 +2,16 @@
 
 part_system_drawit(global._part_system);
 
-var camera = view_get_camera(0);
-
 if (!surface_exists(self.light_surface)) {
-    var cam_width = camera_get_view_width(camera);
-    var cam_height = camera_get_view_height(camera);
+    var cam_width = camera_get_view_width(view_get_camera(0));
+    var cam_height = camera_get_view_height(view_get_camera(0));
     
     self.light_surface = surface_create(cam_width, cam_height);
 }
 
 surface_set_target(self.light_surface);
 draw_clear(#000020);
-camera_apply(camera);
+camera_apply(view_get_camera(0));
 
 gpu_set_blendmode(bm_subtract);
 

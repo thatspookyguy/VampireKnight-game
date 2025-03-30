@@ -1,7 +1,7 @@
-//obj_slash.visible = true;
+obj_slash.visible = true;
 
 if(slashing == true) {
-	 mask_index = spr_slash
+	mask_index = spr_slash
 	if (instance_place(x, y, obj_wall)) {
 		if slash_direction == 0 {
 			obj_player.xSpeed -= instance_place(x, y, obj_wall).knockback
@@ -25,4 +25,3 @@ if(slashing == true) {
 	}
 }
 slashing = false;
-obj_slash.visible = false;

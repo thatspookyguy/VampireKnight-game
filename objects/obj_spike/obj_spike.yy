@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spikes",
-    "path":"sprites/spr_spikes/spr_spikes.yy",
+    "name":"spr_spikes2uh",
+    "path":"sprites/spr_spikes2uh/spr_spikes2uh.yy",
   },
   "spriteMaskId":null,
   "visible":true,

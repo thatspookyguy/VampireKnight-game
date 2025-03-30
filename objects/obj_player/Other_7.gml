@@ -11,3 +11,7 @@ if (sprite_index == spr_knightSlideUpS) {
 if (sprite_index == spr_knightSlideDownS) {
 	sprite_index = spr_knightSlideDown;	
 }
+
+else {
+	sprite_index = spr_knightSide;
+}

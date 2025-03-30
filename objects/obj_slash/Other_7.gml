@@ -1,0 +1,1 @@
+obj_slash.visible = false;

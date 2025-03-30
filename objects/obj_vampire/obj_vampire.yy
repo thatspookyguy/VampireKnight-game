@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_vampireSide",
+    "path":"sprites/spr_vampireSide/spr_vampireSide.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

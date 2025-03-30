@@ -25,4 +25,5 @@ moving = false;
 
 image_xscale = 2;
 image_yscale = 2;
+sprite_index = spr_knightSide;
 //resize();
