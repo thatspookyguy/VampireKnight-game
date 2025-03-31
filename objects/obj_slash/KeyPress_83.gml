@@ -12,5 +12,5 @@ else {
 	isSlashing = true;
 	savedSlashDirection = slash_direction
 	alarm_set(0, 1)/// how long until the actual knockback occurs
-	alarm_set(1, 20); /// slash cooldown timer
+	alarm_set(1, 25); /// slash cooldown timer
 }

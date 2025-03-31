@@ -7,9 +7,7 @@
   ],
   "managed":true,
   "name":"obj_lantern",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"propertyId":{"name":"knockback","path":"objects/obj_wall/obj_wall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",

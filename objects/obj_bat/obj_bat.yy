@@ -10,14 +10,16 @@
   ],
   "managed":true,
   "name":"obj_bat",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_wall",
-    "path":"objects/obj_wall/obj_wall.yy",
+    "name":"obj_knockbackProvider",
+    "path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
