@@ -18,6 +18,7 @@ scootVal = 0.5
 newY = 0
 newX = 0
 
+
 slopeTouch = false;
 ceilingTouch = false;
 canJump = true;

@@ -4,7 +4,7 @@ controlsSetup();
 
 
 if (leftKey && !rightKey && !leftUp && !leftDown) {
-	x = obj_player.x + 15
+	x = obj_player.x - 25
 	y = obj_player.y + 24
 	image_xscale = -2;
 	image_yscale = 2;
@@ -12,7 +12,7 @@ if (leftKey && !rightKey && !leftUp && !leftDown) {
 	slash_direction = 1
 }
 else if (rightKey && !leftKey && !rightUp && !rightDown) {
-	x = obj_player.x - 15
+	x = obj_player.x + 25
 	y = obj_player.y + 24
 	image_xscale = 2;
 	image_yscale = 2;
@@ -21,7 +21,7 @@ else if (rightKey && !leftKey && !rightUp && !rightDown) {
 }
 else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
 	x = obj_player.x 
-	y = obj_player.y - 5
+	y = obj_player.y - 2
 	if obj_player.image_xscale > 0 {
 		image_xscale = 2;
 		image_angle = 90;
@@ -34,7 +34,7 @@ else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
 }
 else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || (rightDown && !upKey)))  {
 	x = obj_player.x 
-	y = obj_player.y + 70
+	y = obj_player.y + 85
 	if obj_player.image_xscale > 0 {
 		image_xscale = 2;
 		image_angle = 270;
@@ -48,7 +48,7 @@ else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || 
 }
 else {
 	if obj_player.image_xscale > 0 {
-		x = obj_player.x + 15
+		x = obj_player.x + 25
 		y = obj_player.y + 24
 		image_xscale = 2;
 		image_yscale = 2;
@@ -56,7 +56,7 @@ else {
 		slash_direction = 0
 	}
 	else{
-		x = obj_player.x - 15
+		x = obj_player.x - 25
 		y = obj_player.y + 24
 		image_xscale = -2;
 		image_yscale = 2;

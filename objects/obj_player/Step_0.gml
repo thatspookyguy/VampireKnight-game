@@ -118,7 +118,9 @@ else {
 
 
 xSpeed *= decay /// Speed decay
+if ySpeed < 15 {
 ySpeed += grav /// gravity
+}
 
 x += xSpeed
 y += ySpeed

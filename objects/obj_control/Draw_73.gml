@@ -22,7 +22,7 @@ var sprite = spr_light;
 
 with (obj_lantern) {
 	if (obj_lantern.hit == true) {
-	    draw_sprite_ext(sprite, 0, self.x, self.y - 60, scale, scale, 0, c_white, 1);
+	    draw_sprite_ext(spr_lanternLight, 0, self.x, self.y - 60, scale, scale, 0, c_white, 1);
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_middle)
 	}
