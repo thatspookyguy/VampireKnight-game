@@ -1,3 +1,5 @@
 
-
+if (canHit == true) {
 death();
+}
+

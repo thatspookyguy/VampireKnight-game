@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_deathPit",
+  "%Name":"obj_objective",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_deathPit",
+  "name":"obj_objective",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_deathPit",
-    "path":"sprites/spr_deathPit/spr_deathPit.yy",
+    "name":"spr_objective",
+    "path":"sprites/spr_objective/spr_objective.yy",
   },
   "spriteMaskId":null,
   "visible":true,

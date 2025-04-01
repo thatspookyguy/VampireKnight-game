@@ -1,1 +1,1 @@
-death();
+room_restart()
