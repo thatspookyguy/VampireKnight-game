@@ -11,7 +11,7 @@
   "managed":true,
   "name":"obj_bat",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
     "name":"Objects",

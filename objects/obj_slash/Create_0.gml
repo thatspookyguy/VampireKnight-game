@@ -1,7 +1,7 @@
 obj_slash.visible = false;
 mask_index = spr_nothing; 
 slash_direction = 0;
-savedSlashDirection = 0;
+savedSlashDirection = 5; /// 5 is the neutral value that is reset to at the end of the cooldown
 slashing = true; 
 knockback_modifier = 0;
 isSlashing = false;

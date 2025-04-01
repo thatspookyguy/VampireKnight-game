@@ -23,21 +23,21 @@ else {
 
 if (moving == true) {
 	if (slopeTouch == false && place_meeting(x, y + 1, obj_wall)) {
-		sprite_index = spr_knightWalk;
+		//sprite_index = spr_knightWalk;
 	}
 	else if (slopeTouch == true) {
 		//sprite_index = spr_knightSlideDownS;
 	}
 	else if (!place_meeting(x, y + 1, obj_wall)) {
-		sprite_index = spr_knightJump;
+		//sprite_index = spr_knightJump;
 	}
 }
 else {
 	if (!place_meeting(x, y + 1, obj_wall)) {
-		sprite_index = spr_knightJump;
+		//sprite_index = spr_knightJump;
 	}
 	else {
-		sprite_index = spr_knightSide;
+		//sprite_index = spr_knightSide;
 	}
 }
 		
@@ -111,6 +111,9 @@ if place_meeting(x, y + ySpeed, obj_wall) { /// collision
 
 if (ySpeed >= 0 && place_meeting(x, y+ 3, obj_wall)) || (place_meeting(x, y+ 3, obj_slope)) {
 	canJump = true;
+	if (sprite_index == spr_knightJSDown) || (sprite_index == spr_knightJSSide) || (sprite_index == spr_knightJSUp) {
+		sprite_index = spr_knightSide
+	}
 }
 else {
 	canJump = false;
@@ -127,7 +130,7 @@ y += ySpeed
 
 //// debugging for speed
 
-show_debug_message(xSpeed)
+//show_debug_message(xSpeed)
 
 
 if place_meeting(x, y, obj_wall){

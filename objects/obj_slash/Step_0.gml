@@ -3,7 +3,7 @@ controlsSetup();
 
 
 
-if (leftKey && !rightKey && !leftUp && !leftDown) {
+if (leftKey && !rightKey && !leftUp && !leftDown && savedSlashDirection == 5) {
 	x = obj_player.x - 25
 	y = obj_player.y + 24
 	image_xscale = -2;
@@ -11,7 +11,7 @@ if (leftKey && !rightKey && !leftUp && !leftDown) {
 	image_angle = 0;
 	slash_direction = 1
 }
-else if (rightKey && !leftKey && !rightUp && !rightDown) {
+else if (rightKey && !leftKey && !rightUp && !rightDown  && savedSlashDirection == 5) {
 	x = obj_player.x + 25
 	y = obj_player.y + 24
 	image_xscale = 2;
@@ -19,7 +19,7 @@ else if (rightKey && !leftKey && !rightUp && !rightDown) {
 	image_angle = 0;
 	slash_direction = 0
 }
-else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
+else if (((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey))  && savedSlashDirection == 5) {
 	x = obj_player.x 
 	y = obj_player.y - 2
 	if obj_player.image_xscale > 0 {
@@ -32,7 +32,7 @@ else if ((upKey && !downKey) || (leftUp && !downKey) || (rightUp && !downKey)) {
 	}
 	slash_direction = 2
 }
-else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || (rightDown && !upKey)))  {
+else if (!obj_player.canJump && savedSlashDirection == 5 && ((downKey && !upKey) || (leftDown && !upKey) || (rightDown && !upKey)))  {
 	x = obj_player.x 
 	y = obj_player.y + 85
 	if obj_player.image_xscale > 0 {
@@ -46,7 +46,7 @@ else if (!obj_player.canJump && ((downKey && !upKey) || (leftDown && !upKey) || 
 	image_yscale = -2;
 	slash_direction = 3
 }
-else {
+else if (savedSlashDirection == 5 && !upKey && !downKey && !leftKey && !rightKey) {
 	if obj_player.image_xscale > 0 {
 		x = obj_player.x + 25
 		y = obj_player.y + 24
@@ -66,3 +66,47 @@ else {
 		
 }
 
+if (savedSlashDirection == 1) {
+	x = obj_player.x - 25
+	y = obj_player.y + 24
+	image_xscale = -2;
+	image_yscale = 2;
+	image_angle = 0;
+}
+else if savedSlashDirection == 0 {
+	x = obj_player.x + 25
+	y = obj_player.y + 24
+	image_xscale = 2;
+	image_yscale = 2;
+	image_angle = 0;
+}
+else if savedSlashDirection == 2 {
+	x = obj_player.x 
+	y = obj_player.y - 2
+	if obj_player.image_xscale > 0 {
+		image_xscale = 2;
+		image_angle = 90;
+	} 
+	else { 
+		image_xscale = -2 
+		image_angle = 270;
+	}
+
+}
+else if (savedSlashDirection == 3)  {
+	x = obj_player.x 
+	y = obj_player.y + 85
+	if obj_player.image_xscale > 0 {
+		image_xscale = 2;
+		image_angle = 270;
+	}
+	else {
+		image_xscale = -2 
+		image_angle = 90;
+	}
+	image_yscale = -2;
+}
+
+
+
+show_debug_message(savedSlashDirection)
