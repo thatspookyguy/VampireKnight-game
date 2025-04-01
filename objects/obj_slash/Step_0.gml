@@ -109,4 +109,4 @@ else if (savedSlashDirection == 3)  {
 
 
 
-show_debug_message(savedSlashDirection)
+//show_debug_message(savedSlashDirection)
