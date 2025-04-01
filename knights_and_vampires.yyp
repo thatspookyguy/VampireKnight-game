@@ -157,6 +157,7 @@
     {"id":{"name":"spr_slash","path":"sprites/spr_slash/spr_slash.yy",},},
     {"id":{"name":"spr_slashBetter","path":"sprites/spr_slashBetter/spr_slashBetter.yy",},},
     {"id":{"name":"spr_spikes2uh","path":"sprites/spr_spikes2uh/spr_spikes2uh.yy",},},
+    {"id":{"name":"spr_spikesBest","path":"sprites/spr_spikesBest/spr_spikesBest.yy",},},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
     {"id":{"name":"spr_vampireSide","path":"sprites/spr_vampireSide/spr_vampireSide.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
