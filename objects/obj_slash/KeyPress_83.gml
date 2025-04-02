@@ -7,6 +7,7 @@ if (alarm_get(1) > -1) {
 }
 else {
 	slashing = true;
+	audio_play_sound(snd_sword, 0, false, 0.3, 0, random_range(0.8, 1.2))
 	sprite_index = spr_slash;
 	image_index = 0;
 	isSlashing = true;

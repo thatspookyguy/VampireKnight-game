@@ -7,10 +7,12 @@ if(slashing == true) {
 	
 	mask_index = spr_slash
 	if (instance_place(x, y, obj_knockbackProvider)) {
+		audio_play_sound(snd_hit, 0, false, 0.3, 0, random_range(0.8, 1.2))
 		if savedSlashDirection == 0 {
-			if obj_player.xSpeed > -2 && ((obj_player.xSpeed / 2 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback {
-				obj_player.xSpeed -= ((obj_player.xSpeed / 2 ) * instance_place(x, y, obj_knockbackProvider).knockback)
-			} else { obj_player.xSpeed -=  instance_place(x, y, obj_knockbackProvider).knockback }
+			if obj_player.xSpeed > -2 && ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback {
+				obj_player.xSpeed -= ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback)
+			} else { obj_player.xSpeed = -instance_place(x, y, obj_knockbackProvider).knockback }
+
 			//sprites
 			if (!obj_player.canJump) {
 			obj_player.sprite_index = spr_knightJSSide;
@@ -18,9 +20,10 @@ if(slashing == true) {
 			
 		}
 		else if savedSlashDirection == 1 {
-			if obj_player.xSpeed < 2 && ((obj_player.xSpeed / 2 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback  {
-				obj_player.xSpeed += ((obj_player.xSpeed / 2 ) * instance_place(x, y, obj_knockbackProvider).knockback)
-			} else { obj_player.xSpeed +=  instance_place(x, y, obj_knockbackProvider).knockback }
+			if obj_player.xSpeed < 2 && ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback  {
+				obj_player.xSpeed += ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback)
+			} else { obj_player.xSpeed = instance_place(x, y, obj_knockbackProvider).knockback }
+			
 			//sprites 
 			if (!obj_player.canJump) {
 				obj_player.sprite_index = spr_knightJSSide;
@@ -44,7 +47,8 @@ obj_player.ySpeed -= ((obj_player.ySpeed / 5 ) * instance_place(x, y, obj_knockb
 			//sprites
 			obj_player.sprite_index = spr_knightJSDown; 
 		}
-
+		
+		
 	}
 	if  instance_place(x, y, obj_bat) {
 		var hitEnemy = instance_place(x, y, obj_bat)
@@ -52,9 +56,11 @@ obj_player.ySpeed -= ((obj_player.ySpeed / 5 ) * instance_place(x, y, obj_knockb
 		if (hitEnemy.canHit == true) {
 			hitEnemy.alarm[0] = 180;
 		}
+	mask_index = spr_nothing;
 
 }
 }
+
 
 slashing = false;
 

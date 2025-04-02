@@ -1,6 +1,7 @@
 controlsSetup()
 getControls()
 
+mask_index = spr_knightSide;
 
 grav = .8
 xSpeed = 0;

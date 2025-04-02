@@ -9,8 +9,8 @@
   "name":"obj_movingPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"walls and stuff",
+    "path":"folders/Objects/walls and stuff.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",

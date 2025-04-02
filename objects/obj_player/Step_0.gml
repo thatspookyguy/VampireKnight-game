@@ -105,6 +105,9 @@ if place_meeting(x, y + ySpeed, obj_wall) { /// collision
 	if (canJump && (keyboard_check(vk_right) - keyboard_check(vk_left)) == 0) {
 		xSpeed *= drag
 	}
+	else if (abs(xSpeed) > 5) {
+		xSpeed *= drag
+	}
 }
 
 /// set if I'm on ground
@@ -129,8 +132,8 @@ x += xSpeed
 y += ySpeed
 
 //// debugging for speed
+show_debug_message(xSpeed)
 
-//show_debug_message(xSpeed)
 
 
 if place_meeting(x, y, obj_wall){

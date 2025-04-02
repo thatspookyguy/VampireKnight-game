@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_movingPlatform","path":"objects/obj_movingPlatform/obj_movingPlatform.yy",},"propertyId":{"name":"radius","path":"objects/obj_movingPlatform/obj_movingPlatform.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1200",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"walls and stuff",
+    "path":"folders/Objects/walls and stuff.yy",
   },
   "parentObjectId":{
     "name":"obj_movingPlatform",

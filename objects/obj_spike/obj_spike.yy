@@ -7,11 +7,11 @@
   "managed":true,
   "name":"obj_spike",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"16",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_knockbackProvider",

@@ -9,8 +9,8 @@
   "name":"obj_lantern",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",

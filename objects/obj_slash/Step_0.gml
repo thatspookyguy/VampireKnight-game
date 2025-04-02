@@ -1,7 +1,8 @@
 getControls();
 controlsSetup();
 
-
+//show_debug_message(obj_knockbackProvider.knockback)
+//show_debug_message(obj_bat.knockback)
 
 if (leftKey && !rightKey && !leftUp && !leftDown && savedSlashDirection == 5) {
 	x = obj_player.x - 25
