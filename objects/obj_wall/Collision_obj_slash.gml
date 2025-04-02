@@ -1,0 +1,1 @@
+//obj_knockbackProvider.knockback = 7;

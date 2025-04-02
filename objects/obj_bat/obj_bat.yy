@@ -6,12 +6,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_bat",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_knockbackProvider","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"propertyId":{"name":"knockback","path":"objects/obj_knockbackProvider/obj_knockbackProvider.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"16",},
   ],
   "parent":{
     "name":"Objects",

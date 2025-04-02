@@ -1,4 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(room_2_pitfall);
+if (file_exists("checkpoint.ini"))
+{
+        file_delete("checkpoint.ini");
+}
+
+room_goto(room_1_tutorial);
