@@ -11,7 +11,8 @@ if(slashing == true) {
 		if savedSlashDirection == 0 {
 			if obj_player.xSpeed > -2 && ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback {
 				obj_player.xSpeed -= ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback)
-			} else { obj_player.xSpeed = -instance_place(x, y, obj_knockbackProvider).knockback }
+			} else { obj_player.xSpeed -=  instance_place(x, y, obj_knockbackProvider).knockback }
+			
 
 			//sprites
 			if (!obj_player.canJump) {
@@ -22,7 +23,7 @@ if(slashing == true) {
 		else if savedSlashDirection == 1 {
 			if obj_player.xSpeed < 2 && ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback) > instance_place(x, y, obj_knockbackProvider).knockback  {
 				obj_player.xSpeed += ((obj_player.xSpeed * 0.66 ) * instance_place(x, y, obj_knockbackProvider).knockback)
-			} else { obj_player.xSpeed = instance_place(x, y, obj_knockbackProvider).knockback }
+			} else { obj_player.xSpeed +=  instance_place(x, y, obj_knockbackProvider).knockback }
 			
 			//sprites 
 			if (!obj_player.canJump) {
@@ -56,7 +57,7 @@ obj_player.ySpeed -= ((obj_player.ySpeed / 5 ) * instance_place(x, y, obj_knockb
 		if (hitEnemy.canHit == true) {
 			hitEnemy.alarm[0] = 180;
 		}
-	mask_index = spr_nothing;
+
 
 }
 }

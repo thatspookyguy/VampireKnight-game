@@ -21,26 +21,27 @@ else {
 	moving = false;
 }
 
-if (moving == true) {
-	if (slopeTouch == false && place_meeting(x, y + 1, obj_wall)) {
-		//sprite_index = spr_knightWalk;
-	}
-	else if (slopeTouch == true) {
-		//sprite_index = spr_knightSlideDownS;
-	}
-	else if (!place_meeting(x, y + 1, obj_wall)) {
-		//sprite_index = spr_knightJump;
-	}
-}
-else {
-	if (!place_meeting(x, y + 1, obj_wall)) {
-		//sprite_index = spr_knightJump;
+if  (!obj_slash.isSlashing == true) {
+	if (moving == true) {
+		if (slopeTouch == false && place_meeting(x, y + 1, obj_wall)) {
+			sprite_index = spr_knightWalk;
+		}
+		else if (slopeTouch == true) {
+			sprite_index = spr_knightSlideDownS;
+		}
+		else if (!place_meeting(x, y + 1, obj_wall)) {
+			sprite_index = spr_knightJump;
+		}
 	}
 	else {
-		//sprite_index = spr_knightSide;
+		if (!place_meeting(x, y + 1, obj_wall)) {
+			sprite_index = spr_knightJump;
+		}
+		else {
+			sprite_index = spr_knightSide;
+		}
 	}
-}
-		
+}		
 		
 
 if(abs(xSpeed) <= walkSpeedCap){ ///speed caps
@@ -132,7 +133,10 @@ x += xSpeed
 y += ySpeed
 
 //// debugging for speed
+show_debug_message(ySpeed)
 show_debug_message(xSpeed)
+
+
 
 
 

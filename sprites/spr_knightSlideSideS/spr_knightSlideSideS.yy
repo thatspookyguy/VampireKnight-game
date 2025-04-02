@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_knightSlideSideS",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":35,
   "bbox_left":3,
   "bbox_right":23,
