@@ -22,6 +22,7 @@
   "height":16,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"d346853e-09ce-4841-939f-d315c167ae48","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"d346853e-09ce-4841-939f-d315c167ae48","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"a804ce9e-7ce1-48cc-a0eb-a634a21ac725","blendMode":0,"displayName":"default","isLocked":false,"name":"a804ce9e-7ce1-48cc-a0eb-a634a21ac725","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_batHit",
