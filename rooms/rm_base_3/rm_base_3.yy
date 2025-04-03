@@ -240,7 +240,11 @@
           4,-7,0,4,3,5,5,1,-3,0,-2,19,-4,0,4,3,5,5,1,-4,0,1,4,-7,0,4,3,5,5,1,-3,0,-2,19,-4,0,4,3,5,5,1,-4,0,1,
           4,-3,7,1,8,-3,0,4,3,5,5,1,-3,0,-2,19,-4,0,4,3,5,5,1,-4,0,1,4,-3,7,-4,0,4,3,5,5,1,-3,0,-2,19,-2,0,6,6,
           7,3,5,5,1,-3,0,1,6,-3,7,1,8,-4,0,4,3,5,5,1,-3,0,-2,19,-4,0,4,3,5,5,1,-11,0,5,6,3,5,5,1,-3,0,2,19,18,
+<<<<<<< HEAD
           -4,0,4,3,5,5,1,-12,0,4,3,5,5,1,-3,0,2,20,19,-4,0,4,3,5,5,1,-12,0,4,3,5,5,1,-3,0,1,19,-29,24,
+=======
+          -4,0,4,3,5,5,1,-12,0,4,3,5,5,1,-3,0,2,18,19,-4,0,4,3,5,5,1,-12,0,4,3,5,5,1,-3,0,1,19,-29,24,
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_tiles","path":"tilesets/ts_tiles/ts_tiles.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_25833C31_5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25833C31_5","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":440.0,"y":-119.0,},

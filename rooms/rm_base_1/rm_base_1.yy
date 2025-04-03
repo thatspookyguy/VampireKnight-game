@@ -313,7 +313,11 @@
       ],"layers":[],"name":"DeathScreen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_4AF31712","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4AF31712","objectId":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-128.0,"y":256.0,},
+<<<<<<< HEAD
         {"$GMRInstance":"v1","%Name":"inst_19D44310","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19D44310","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":672.0,},
+=======
+        {"$GMRInstance":"v1","%Name":"inst_19D44310","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19D44310","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":391.0,"y":336.0,},
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
         {"$GMRInstance":"v1","%Name":"inst_72C5BF02","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72C5BF02","objectId":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":1788.0,"y":96.0,},
         {"$GMRInstance":"v1","%Name":"inst_53F93D8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53F93D8E","objectId":{"name":"obj_endFlag","path":"objects/obj_endFlag/obj_endFlag.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":384.0,},
       ],"layers":[],"name":"player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -324,6 +328,7 @@
           -144,-2147483648,1,17,-40,-2147483648,2,16,17,-29,-2147483648,1,23,-40,-2147483648,2,22,23,-29,-2147483648,
           1,23,-40,-2147483648,2,22,23,-29,-2147483648,1,23,-40,-2147483648,2,22,23,-29,-2147483648,1,23,-40,-2147483648,
           2,22,23,-29,-2147483648,1,23,-40,-2147483648,2,22,23,-29,-2147483648,1,23,-40,-2147483648,2,28,29,-29,
+<<<<<<< HEAD
           -2147483648,1,23,-71,-2147483648,1,23,-71,-2147483648,1,29,-143,-2147483648,22,3,2,3,4,2,3,4,2,3,4,2,
           3,4,2,3,4,2,3,4,2,3,13,-39,-2147483648,1,1,-10,-2147483648,22,9,8,9,10,8,9,10,8,9,10,8,9,10,8,9,10,8,
           9,10,8,9,19,-39,-2147483648,1,7,-10,-2147483648,21,15,14,15,-2147483648,14,15,-2147483648,14,15,-2147483648,
@@ -336,6 +341,20 @@
           18,23,22,23,-2147483648,22,23,-2147483648,22,23,-2147483648,28,29,-2147483648,22,23,27,22,23,-54,-2147483648,
           9,23,22,23,-2147483648,22,23,-2147483648,22,23,-4,-2147483648,5,22,23,27,22,23,-54,-2147483648,9,29,
           28,29,-2147483648,28,29,-2147483648,28,29,-4,-2147483648,5,28,29,27,28,29,-126,-2147483648,
+=======
+          -2147483648,1,23,-71,-2147483648,1,23,-71,-2147483648,1,29,-143,-2147483648,21,3,2,3,4,2,3,4,2,3,4,2,
+          3,4,2,3,4,2,3,4,2,3,-51,-2147483648,21,9,8,9,10,8,9,10,8,9,10,8,9,10,8,9,10,8,9,10,8,9,-51,-2147483648,
+          21,15,14,15,-2147483648,14,15,-2147483648,14,15,-2147483648,14,15,-2147483648,14,15,7,14,15,-2147483648,
+          14,15,-51,-2147483648,21,21,20,21,-2147483648,20,21,-2147483648,20,21,-2147483648,20,21,-2147483648,
+          20,21,7,20,21,-2147483648,20,21,-51,-2147483648,21,17,16,17,-2147483648,16,17,-2147483648,16,17,-2147483648,
+          16,17,-2147483648,16,17,7,16,17,-2147483648,16,17,-51,-2147483648,21,23,22,23,-2147483648,22,23,-2147483648,
+          22,23,-2147483648,22,23,-2147483648,22,23,7,22,23,-2147483648,22,23,-51,-2147483648,21,23,22,23,-2147483648,
+          22,23,-2147483648,22,23,-2147483648,22,23,-2147483648,22,23,7,22,23,-2147483648,28,29,-30,-2147483648,
+          1,6,-3,-2147483648,1,6,-3,-2147483648,1,6,-12,-2147483648,18,23,22,23,-2147483648,22,23,-2147483648,
+          22,23,-2147483648,28,29,-2147483648,22,23,7,22,23,-54,-2147483648,9,23,22,23,-2147483648,22,23,-2147483648,
+          22,23,-4,-2147483648,5,22,23,7,22,23,-54,-2147483648,9,29,28,29,-2147483648,28,29,-2147483648,28,29,
+          -4,-2147483648,5,28,29,7,28,29,-126,-2147483648,
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_cols","path":"tilesets/ts_cols/ts_cols.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_3","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":72,"TileCompressedData":[
           -311,-2147483648,2,1,2,-11,-2147483648,2,1,2,-3,-2147483648,2,1,2,-3,-2147483648,2,1,2,-3,-2147483648,

@@ -130,8 +130,11 @@
     {"id":{"name":"spr_checkpoint_active","path":"sprites/spr_checkpoint_active/spr_checkpoint_active.yy",},},
     {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},},
     {"id":{"name":"spr_checkpointLit","path":"sprites/spr_checkpointLit/spr_checkpointLit.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"spr_cols_1","path":"sprites/spr_cols_1/spr_cols_1.yy",},},
     {"id":{"name":"spr_cols","path":"sprites/spr_cols/spr_cols.yy",},},
+=======
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
     {"id":{"name":"spr_colsFIN","path":"sprites/spr_colsFIN/spr_colsFIN.yy",},},
     {"id":{"name":"spr_deathPit","path":"sprites/spr_deathPit/spr_deathPit.yy",},},
     {"id":{"name":"spr_deathScreen_1","path":"sprites/spr_deathScreen_1/spr_deathScreen_1.yy",},},
@@ -205,11 +208,17 @@
     {"id":{"name":"spr_spikes2uh","path":"sprites/spr_spikes2uh/spr_spikes2uh.yy",},},
     {"id":{"name":"spr_spikesBest","path":"sprites/spr_spikesBest/spr_spikesBest.yy",},},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
     {"id":{"name":"spr_tilesBg","path":"sprites/spr_tilesBg/spr_tilesBg.yy",},},
     {"id":{"name":"spr_tilesFIN","path":"sprites/spr_tilesFIN/spr_tilesFIN.yy",},},
     {"id":{"name":"spr_vampireSide","path":"sprites/spr_vampireSide/spr_vampireSide.yy",},},
     {"id":{"name":"spr_windows","path":"sprites/spr_windows/spr_windows.yy",},},
+=======
+    {"id":{"name":"spr_tilesBg","path":"sprites/spr_tilesBg/spr_tilesBg.yy",},},
+    {"id":{"name":"spr_tilesFIN","path":"sprites/spr_tilesFIN/spr_tilesFIN.yy",},},
+    {"id":{"name":"spr_vampireSide","path":"sprites/spr_vampireSide/spr_vampireSide.yy",},},
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
     {"id":{"name":"spr_windowsFIN","path":"sprites/spr_windowsFIN/spr_windowsFIN.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite28","path":"sprites/Sprite28/Sprite28.yy",},},
@@ -240,6 +249,12 @@
     {"roomId":{"name":"rm_ghost_3","path":"rooms/rm_ghost_3/rm_ghost_3.yy",},},
     {"roomId":{"name":"rm_ghost_4","path":"rooms/rm_ghost_4/rm_ghost_4.yy",},},
     {"roomId":{"name":"rm_lights_1","path":"rooms/rm_lights_1/rm_lights_1.yy",},},
+<<<<<<< HEAD
+=======
+    {"roomId":{"name":"rm_lights_2","path":"rooms/rm_lights_2/rm_lights_2.yy",},},
+    {"roomId":{"name":"rm_lights_3","path":"rooms/rm_lights_3/rm_lights_3.yy",},},
+    {"roomId":{"name":"rm_tower_1","path":"rooms/rm_tower_1/rm_tower_1.yy",},},
+>>>>>>> c9cb8bc443c060612e289895a4f7c1076fd0a0aa
     {"roomId":{"name":"rooooom","path":"rooms/rooooom/rooooom.yy",},},
     {"roomId":{"name":"scrapLater","path":"rooms/scrapLater/scrapLater.yy",},},
     {"roomId":{"name":"rm_outrocutscene","path":"rooms/rm_outrocutscene/rm_outrocutscene.yy",},},
