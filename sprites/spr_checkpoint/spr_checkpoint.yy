@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_checkpoint",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":15,
   "bbox_left":0,
-  "bbox_right":15,
+  "bbox_right":19,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -19,7 +19,9 @@
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0c934ae0-94fc-4085-a100-9c545f761d51","blendMode":0,"displayName":"default","isLocked":false,"name":"0c934ae0-94fc-4085-a100-9c545f761d51","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9f5b0778-be65-452f-b5b8-ba09cf4da4a1","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"9f5b0778-be65-452f-b5b8-ba09cf4da4a1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c217ff69-ffd0-40f6-80fd-a7f50669df4d","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"c217ff69-ffd0-40f6-80fd-a7f50669df4d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0c934ae0-94fc-4085-a100-9c545f761d51","blendMode":0,"displayName":"default","isLocked":false,"name":"0c934ae0-94fc-4085-a100-9c545f761d51","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_checkpoint",
   "nineSlice":null,
@@ -86,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":20,
 }

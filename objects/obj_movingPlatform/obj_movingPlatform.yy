@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMovingPlatform",
-    "path":"sprites/sMovingPlatform/sMovingPlatform.yy",
+    "name":"spr_movingPlat",
+    "path":"sprites/spr_movingPlat/spr_movingPlat.yy",
   },
   "spriteMaskId":null,
   "visible":true,
