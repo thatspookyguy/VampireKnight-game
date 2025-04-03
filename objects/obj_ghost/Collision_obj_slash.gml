@@ -1,6 +1,6 @@
 if (obj_slash.isSlashing == true) {
 	/// sets alarm to unstun
-	alarm_set(2, 110);
+	alarm_set(2, 90);
 
 	/// stops ghost from moving
 	speed = 0;

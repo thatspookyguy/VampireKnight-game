@@ -6,4 +6,4 @@ if (file_exists("checkpoint.ini"))
         file_delete("checkpoint.ini");
 }
 
-room_goto(room_1_tutorial);
+room_goto(rm_introcutscene);

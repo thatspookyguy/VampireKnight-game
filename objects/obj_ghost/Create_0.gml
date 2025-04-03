@@ -1,5 +1,5 @@
-alarm_set(0, 120);
-
+alarm_set(0, 45);
+blushStun = false;
 alarmSet = false;
 sprite_index = spr_ghost;
 
